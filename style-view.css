@@ -1,0 +1,94 @@
+body.view-body {
+  padding: 30px;
+  background: #fdf6f0;
+  font-family: Arial, sans-serif;
+  color: #4a4a4a;
+}
+
+h2 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
+#userList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+li {
+  list-style: none;
+  background: #ffffff;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.logo-row a img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.logo-row a img:hover {
+  transform: scale(1.05);
+}
+
+.deleteBtn {
+  background-color: #e17055;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #d35400;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .nav-link {
+  color: #636e72;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  background-color: #f1f2f6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .nav-link.active {
+  background-color: #ff6f61; 
+  color: white;
+}
